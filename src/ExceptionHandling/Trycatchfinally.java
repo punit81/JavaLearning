@@ -1,7 +1,6 @@
 package ExceptionHandling;
 
 import java.io.IOException;
-
 public class Trycatchfinally {
 public static void method(){
 	try {
