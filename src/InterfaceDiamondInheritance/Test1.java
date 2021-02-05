@@ -15,12 +15,17 @@ default void method1(){
 		System.out.println("b");
 	}
 }
+interface d extends b,c{
+	/*default void method1(){
+		System.out.println("d");
+	}*/
+}
 class cl{
 	 private void method1(){
 		System.out.println("cl");
 	}
 }
-public class Test1 implements c,a{
+public class Test1 implements d,a{
 	/*public void method1() {
 		System.out.println("Test1");
 	}*/
