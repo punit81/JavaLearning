@@ -43,8 +43,6 @@ public class DeadLockSolution3 {
 			}
 		}
 };
-
-//avoiding nested locks
 		t1.start();
 		t2.start();
 	}
