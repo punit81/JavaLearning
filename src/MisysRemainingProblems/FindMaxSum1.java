@@ -1,5 +1,4 @@
 package MisysRemainingProblems;
-import java.util.ArrayList;
 public class FindMaxSum1 
 { 
     /*Function to return max sum such that no two elements 
