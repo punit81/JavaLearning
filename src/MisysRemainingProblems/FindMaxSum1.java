@@ -26,13 +26,18 @@ public class FindMaxSum1
     } 
     public int findmaxsum(int arr[]) {  ///mycode
     	int max=0,tempmax=0;
-    	for(int i=0;i<arr.length;i++) {
-    		for(int k=0;k<arr.length;k++) {
-    			tempmax=arr[i];
-    			for(int j=2+i;j<arr.length;j+=2+k) {
+    	int i=0;
+    	for(i=0;i<arr.length;i++) {
+    		for(int k=0;k<arr.length;k++) {//loop for changing the incrementor
+    			for(int l=2;l<arr.length;l++)
+    			{	tempmax=arr[i];
+    			if(tempmax>max)
+					max=tempmax;
+    			for(int j=l+i;j<arr.length;j+=l+k) {
     				tempmax+=arr[j];
     				if(tempmax>max)
     					max=tempmax;
+    			}
     			}
     		}
     	}
@@ -43,7 +48,7 @@ public class FindMaxSum1
     { 
         FindMaxSum1 sum = new FindMaxSum1(); 
         //int arr[] = new int[]{3,2,5,10,17,7,12,1,100};
-        int arr[] = new int[]{5, 5, 10, 100, 10, 5}; 
+        int arr[] = new int[]{-5, 5, -10, 100, 10, 5}; 
         System.out.print('[');
         for (int i: arr)
         	System.out.print(i+",");
