@@ -6,10 +6,8 @@ package MultiThreading;
 that the output should be in natural order (1,2,3,4,5....). 
 Let’s assume the thread classes are already.
  */
-class Thread1 implements Runnable{
-	public void run() {
-		
-	}
+class Thread1{
+	
 }
 class OddThread implements Runnable{
 	Thread1 th;
