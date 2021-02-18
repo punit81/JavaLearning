@@ -37,7 +37,7 @@ class ChineseFood extends NonVegFoodDecorator{
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return super.getName()+"Chinese Food";
+		return super.getName()+" with Manchurian and chicken soup";
 	}
 	@Override
 	public double getPrice() {
@@ -55,7 +55,7 @@ class IndianNonVegFood extends NonVegFoodDecorator{
 	@Override
 	public String getName() {
 		// TODO Auto-generated method stub
-		return super.getName()+"Indian Non-Veg Food";
+		return super.getName()+" with Indian Non-Veg Curry";
 	}
 	@Override
 	public double getPrice() {
